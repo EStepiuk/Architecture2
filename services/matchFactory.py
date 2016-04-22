@@ -5,6 +5,7 @@ class MatchFactory:
     """
     Class produce list of match from hardcoded list
     """
+
     def __init__(self):
         self.matches = [['England', 'Lester', 'Everton', 2, 0, [26, 2, 2016]],
                         ['England', 'MU', 'Everton', 3, 0, [27, 2, 2016]],

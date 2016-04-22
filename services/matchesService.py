@@ -6,7 +6,8 @@ class MatchesService:
     Class implements actions with matches
     """
 
-    def get_country(self, matches, countryName):
+    @staticmethod
+    def get_country(matches, countryName):
         """
         Find all matches in selected country
         :param matches:
@@ -19,7 +20,8 @@ class MatchesService:
                 res.append(m)
         return res
 
-    def get_team(self, matches, teamName):
+    @staticmethod
+    def get_team(matches, teamName):
         """
         Find all matches in selected team
         :param matches:
@@ -32,7 +34,8 @@ class MatchesService:
                 res.append(m)
         return res
 
-    def add_match(self, matches, country, team1, team2, res1, res2, day, month, year):
+    @staticmethod
+    def add_match(matches, country, team1, team2, res1, res2, day, month, year):
         """
         Function add match to list of matches
         :param matches:

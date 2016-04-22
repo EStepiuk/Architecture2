@@ -46,6 +46,5 @@ class TestStringMethods(unittest.TestCase):
         contr = CommandPromptController()
         contr.navigation()
 
-
 if __name__ == '__main__':
     unittest.main()

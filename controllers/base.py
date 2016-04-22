@@ -14,7 +14,8 @@ class BaseController:
         self.factory = MatchFactory()
         self.service = MatchesService()
 
-    def _get_serializer(self):
+    @staticmethod
+    def _get_serializer():
         """
         Choose serialisation method from config file
         :return:
