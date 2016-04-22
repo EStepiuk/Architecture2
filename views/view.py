@@ -30,13 +30,15 @@ class ConsoleView(object):
         8. Exit
         """)
 
-    def console_input(self):
-        """
-        Input from console
-        :return:
-        """
-        return input()
-
     def msg_output(self, mes):
         print(mes)
 
+    def render_console_help(self):
+        print("""
+        footballtable [option] [args]
+        options:
+        -a, --add <country> <team1> <team2> <team1 goals> <team2 goals> <date> <month> <year>
+        -c, --country= <country>
+        -t, --team= <team>
+        -h, --help
+        """)

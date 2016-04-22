@@ -8,9 +8,7 @@ from services.matchesService import MatchesService
 from views.view import ConsoleView
 
 
-
 class BaseController:
-
     def __init__(self):
         self.view = ConsoleView()
         self.factory = MatchFactory()
@@ -22,7 +20,7 @@ class BaseController:
         :return:
         """
         parser = configparser.ConfigParser()
-        parser.read("property.cfg")
+        parser.read("config.ini")
         method = parser["serialize_method"]['method']
         if method == "pickle":
             return PickleSerialyser()

@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+from services.controllerFactory import ControllerFactory
+
+factory = ControllerFactory()
+controller = factory.get_controller()
+controller.navigation()
