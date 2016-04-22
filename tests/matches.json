@@ -1,146 +1,146 @@
 [
     {
-        "res2": 0,
         "res1": 2,
-        "country": "England",
+        "team2": "Everton",
         "date": [
             26,
             2,
             2016
         ],
-        "team2": "Everton",
-        "team1": "Lester"
+        "res2": 0,
+        "team1": "Lester",
+        "country": "England"
     },
     {
-        "res2": 0,
         "res1": 3,
-        "country": "England",
+        "team2": "Everton",
         "date": [
             27,
             2,
             2016
         ],
-        "team2": "Everton",
-        "team1": "MU"
+        "res2": 0,
+        "team1": "MU",
+        "country": "England"
     },
     {
-        "res2": 0,
         "res1": 0,
-        "country": "England",
+        "team2": "Everton",
         "date": [
             28,
             2,
             2016
         ],
-        "team2": "Everton",
-        "team1": "Chelsea"
+        "res2": 0,
+        "team1": "Chelsea",
+        "country": "England"
     },
     {
-        "res2": 0,
         "res1": 1,
-        "country": "England",
+        "team2": "Everton",
         "date": [
             29,
             2,
             2016
         ],
-        "team2": "Everton",
-        "team1": "Arsenal"
+        "res2": 0,
+        "team1": "Arsenal",
+        "country": "England"
     },
     {
-        "res2": 0,
         "res1": 2,
-        "country": "Spain",
+        "team2": "Everton",
         "date": [
             26,
             2,
             2016
         ],
-        "team2": "Everton",
-        "team1": "Barcelona"
+        "res2": 0,
+        "team1": "Barcelona",
+        "country": "Spain"
     },
     {
-        "res2": 0,
         "res1": 2,
-        "country": "Spain",
+        "team2": "Everton",
         "date": [
             27,
             2,
             2016
         ],
-        "team2": "Everton",
-        "team1": "Real"
+        "res2": 0,
+        "team1": "Real",
+        "country": "Spain"
     },
     {
-        "res2": 0,
         "res1": 2,
-        "country": "Spain",
+        "team2": "Everton",
         "date": [
             28,
             2,
             2016
         ],
-        "team2": "Everton",
-        "team1": "Sevilla"
+        "res2": 0,
+        "team1": "Sevilla",
+        "country": "Spain"
     },
     {
+        "res1": 2,
+        "team2": "Everton",
+        "date": [
+            29,
+            2,
+            2016
+        ],
         "res2": 1,
-        "res1": 2,
-        "country": "Spain",
-        "date": [
-            29,
-            2,
-            2016
-        ],
-        "team2": "Everton",
-        "team1": "Eibar"
+        "team1": "Eibar",
+        "country": "Spain"
     },
     {
-        "res2": 4,
         "res1": 2,
-        "country": "Ukraine",
+        "team2": "Everton",
         "date": [
             26,
             2,
             2016
         ],
-        "team2": "Everton",
-        "team1": "Dynamo"
+        "res2": 4,
+        "team1": "Dynamo",
+        "country": "Ukraine"
     },
     {
-        "res2": 2,
         "res1": 2,
-        "country": "Ukraine",
+        "team2": "Everton",
         "date": [
             27,
             2,
             2016
         ],
-        "team2": "Everton",
-        "team1": "Vorskla"
+        "res2": 2,
+        "team1": "Vorskla",
+        "country": "Ukraine"
     },
     {
-        "res2": 6,
         "res1": 2,
-        "country": "Ukraine",
+        "team2": "Everton",
         "date": [
             28,
             2,
             2016
         ],
-        "team2": "Everton",
-        "team1": "Stal"
+        "res2": 6,
+        "team1": "Stal",
+        "country": "Ukraine"
     },
     {
-        "res2": 7,
         "res1": 2,
-        "country": "Ukraine",
+        "team2": "Everton",
         "date": [
             29,
             2,
             2016
         ],
-        "team2": "Everton",
-        "team1": "Dnipro"
+        "res2": 7,
+        "team1": "Dnipro",
+        "country": "Ukraine"
     }
 ]
