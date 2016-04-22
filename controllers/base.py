@@ -21,7 +21,7 @@ class BaseController:
         :return:
         """
         parser = configparser.ConfigParser()
-        parser.read("../config.ini")
+        parser.read("config.ini")
         method = parser["serialize_method"]['method']
         if method == "pickle":
             return PickleSerialyser()
