@@ -1,5 +1,6 @@
-__author__ = 'Meggapixxel'
 import json
+
+__author__ = 'Meggapixxel'
 
 from models.model import Match
 
@@ -20,9 +21,10 @@ class MatchEncoder(json.JSONEncoder):
                     }
          return json.JSONEncoder.default(self, o)
 
+
 class JsonSerialyser(object):
 
-    def loadMatches(self, fileName='matches.json'):
+    def load_matches(self, fileName='matches.json'):
         """
         Load objects from file
         :param fileName:
@@ -36,9 +38,7 @@ class JsonSerialyser(object):
                                      m["res1"], m["res2"], m["date"]))
             return matches
 
-
-
-    def saveMatches(self, matches, fileName='matches.json'):
+    def save_matches(self, matches, fileName='matches.json'):
         """
         Save objects to file
         :param matches:

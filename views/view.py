@@ -1,5 +1,6 @@
 __author__ = 'Meggapixxel'
 
+
 class ConsoleView(object):
     """
     Class shows info on console

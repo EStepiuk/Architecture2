@@ -9,7 +9,7 @@ except ImportError:
 
 
 class YamlSerialyser(object):
-    def loadMatches(self, fileName='matches.yaml'):
+    def load_matches(self, fileName='matches.yaml'):
         """
         Load objects from file
         :param fileName:
@@ -20,7 +20,7 @@ class YamlSerialyser(object):
             return matches
 
 
-    def saveMatches(self, matches,  fileName='matches.yaml'):
+    def save_matches(self, matches,  fileName='matches.yaml'):
         """
         Save objects to file
         :param matches:

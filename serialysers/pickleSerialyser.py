@@ -3,7 +3,7 @@ __author__ = 'Meggapixxel'
 import pickle
 
 class PickleSerialyser(object):
-    def loadMatches(self, fileName='matches.pickle'):
+    def load_matches(self, fileName='matches.pickle'):
         """
         Load objects from file
         :param fileName:
@@ -13,7 +13,7 @@ class PickleSerialyser(object):
             matches = pickle.load(f)
             return matches
 
-    def saveMatches(self, matches, fileName='matches.pickle'): 
+    def save_matches(self, matches, fileName='matches.pickle'):
         """
         Save objects to file
         :param matches:

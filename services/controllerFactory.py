@@ -10,7 +10,6 @@ class ControllerFactory():
     attribute method. In case either 'command_line' produce CommandLineController or 'console' for MatchesController
     """
 
-
     def get_controller(self):
         parser = configparser.ConfigParser()
         parser.read("property.cfg")
