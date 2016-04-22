@@ -1,7 +1,8 @@
-class Match:
+class Match(object):
     """
     Class implements info about match
     """
+
     def __init__(self, country, team1, team2, res1, res2, date):
         self.country = country
         self.team1 = team1
@@ -11,9 +12,9 @@ class Match:
         self.date = date
 
     def __str__(self):
-        return ("%-10s : %-10s vs %-10s | %-2s:%-2s | %s-%s-%s" %
-                (self.country, self.team1, self.team2, self.res1, self.res2,
-                 self.date[0], self.date[1], self.date[2]))
+        return ("%s vs %s - %s:%s on %s/%s/%s in %s" %
+                (self.team1, self.team2, self.res1, self.res2,
+                 self.date[0], self.date[1], self.date[2], self.country))
 
     def equal(self, match):
         if isinstance(match, Match):
@@ -21,3 +22,4 @@ class Match:
                 return True
         else:
             return False
+

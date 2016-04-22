@@ -11,9 +11,9 @@ class ControllerFactory:
     """
 
     @staticmethod
-    def get_controller():
+    def get_controller(filename="../config.ini"):
         parser = configparser.ConfigParser()
-        parser.read("config.ini")
+        parser.read(filename)
         method = parser["controller"]['method']
         if method == "command_prompt":
             return CommandPromptController()

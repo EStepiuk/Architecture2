@@ -4,6 +4,7 @@ from controllers.command_prompt import CommandPromptController
 from controllers.interactive import InteractiveController
 from serialysers.jsonSerialyser import JsonSerialyser
 from serialysers.yamlSerialyser import YamlSerialyser
+from services.controllerFactory import ControllerFactory
 from services.matchFactory import MatchFactory
 from tests.string_support import *
 
@@ -39,12 +40,17 @@ class TestStringMethods(unittest.TestCase):
 
     def test_teamPrint(self):
         matches = MatchFactory().get_all()
-        print(matches[0])
         self.assertTrue(matches[0].equal(matches[0]))
+        self.assertFalse(matches[0].equal(2))
 
     def test_controller(self):
         contr = CommandPromptController()
-        contr.navigation()
+
+    def test_get_country(self):
+        controllerFactory = ControllerFactory()
+        controllerFactory.get_controller("configtest1.ini")
+        controllerFactory.get_controller("configtest2.ini")
+        controllerFactory.get_controller("configtest3.ini")
 
 if __name__ == '__main__':
     unittest.main()
