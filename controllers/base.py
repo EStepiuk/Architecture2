@@ -12,7 +12,7 @@ class BaseController:
     def __init__(self):
         self.view = ConsoleView()
         self.factory = MatchFactory()
-        self.service = MatchesService()
+        self.service = MatchesService
 
     @staticmethod
     def _get_serializer():

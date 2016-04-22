@@ -2,11 +2,13 @@ import unittest
 
 from controllers.command_prompt import CommandPromptController
 from controllers.interactive import InteractiveController
-from serialysers.jsonSerialyser import JsonSerialyser
+from serialysers.jsonSerialyser import JsonSerialyser, MatchEncoder
 from serialysers.yamlSerialyser import YamlSerialyser
 from services.controllerFactory import ControllerFactory
 from services.matchFactory import MatchFactory
+from services.matchesService import MatchesService
 from tests.string_support import *
+from serialysers.pickleSerialyser import PickleSerialyser
 
 
 class TestStringMethods(unittest.TestCase):
@@ -43,14 +45,43 @@ class TestStringMethods(unittest.TestCase):
         self.assertTrue(matches[0].equal(matches[0]))
         self.assertFalse(matches[0].equal(2))
 
-    def test_controller(self):
-        contr = CommandPromptController()
+    def test_get_team(self):
+        matches = MatchFactory().get_all()
+        self.assertIsNotNone(MatchesService().get_team(matches, "MU"))
 
     def test_get_country(self):
-        controllerFactory = ControllerFactory()
-        controllerFactory.get_controller("configtest1.ini")
-        controllerFactory.get_controller("configtest2.ini")
-        controllerFactory.get_controller("configtest3.ini")
+        matches = MatchFactory().get_all()
+        self.assertIsNotNone(MatchesService().get_country(matches, "England"))
+
+    def test_add_match(self):
+        matches = MatchFactory().get_all()
+        self.assertIsNone(MatchesService()
+                          .add_match(matches, 'England', 'Lester', 'Everton', 2, 0, 26, 2, 2016))
+
+    def test_json_load_matches(self):
+        matches = JsonSerialyser.load_matches()
+        self.assertIsInstance(matches, list)
+
+    def test_yaml_load_matches(self):
+        matches = YamlSerialyser.load_matches()
+        self.assertIsInstance(matches, list)
+
+    def test_pickle_load_matches(self):
+        matches = PickleSerialyser.load_matches()
+        self.assertIsInstance(matches, list)
+
+    def test_pickle_save_matches(self):
+        matches = PickleSerialyser.load_matches()
+        self.assertIsNone(PickleSerialyser.save_matches(matches))
+
+    def test_json_defaul(self):
+        self.assertIsNotNone(MatchEncoder().default(""))
+
+    def test_get_matches_get_country(self):
+        self.assertIsNotNone(ControllerFactory.get_controller("configtest1.ini"))
+        self.assertIsNotNone(ControllerFactory.get_controller("configtest2.ini"))
+        self.assertIsNone(ControllerFactory.get_controller("configtest3.ini"))
+
 
 if __name__ == '__main__':
     unittest.main()

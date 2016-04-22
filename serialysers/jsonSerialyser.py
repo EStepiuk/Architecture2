@@ -17,7 +17,7 @@ class MatchEncoder(json.JSONEncoder):
                     "res2": o.res2,
                     "date": o.date
                     }
-        return json.JSONEncoder.default(self, o)
+        return json.JSONEncoder
 
 
 class JsonSerialyser:
