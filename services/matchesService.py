@@ -1,6 +1,7 @@
 from models.model import Match
 
-class MatchesService(object):
+
+class MatchesService:
     """
     Class implements actions with matches
     """
@@ -38,5 +39,3 @@ class MatchesService(object):
         :return:
         """
         matches.append(Match(country, team1, team2, res1, res2, [day, month, year]))
-
-

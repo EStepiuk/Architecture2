@@ -2,7 +2,7 @@ __author__ = 'Meggapixxel'
 
 import pickle
 
-class PickleSerialyser(object):
+class PickleSerialyser:
     def load_matches(self, fileName='matches.pickle'):
         """
         Load objects from file

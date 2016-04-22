@@ -1,4 +1,4 @@
-class Match(object):
+class Match:
     """
     Class implements info about match
     """
@@ -11,9 +11,9 @@ class Match(object):
         self.date = date
 
     def __str__(self):
-        return ("%s vs %s - %s:%s on %s/%s/%s in %s" %
-                (self.team1, self.team2, self.res1, self.res2,
-                 self.date[0], self.date[1], self.date[2], self.country))
+        return ("%-10s : %-10s vs %-10s | %-2s:%-2s | %s-%s-%s" %
+                (self.country, self.team1, self.team2, self.res1, self.res2,
+                 self.date[0], self.date[1], self.date[2]))
 
     def equal(self, match):
         if isinstance(match, Match):

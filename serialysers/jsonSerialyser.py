@@ -19,9 +19,8 @@ class MatchEncoder(json.JSONEncoder):
                     }
          return json.JSONEncoder.default(self, o)
 
-class JsonSerialyser(object):
-
-    def loadMatches(self, fileName='matches.json'):
+class JsonSerialyser:
+    def load_matches(self, fileName='matches.json'):
         """
         Load objects from file
         :param fileName:
@@ -37,7 +36,7 @@ class JsonSerialyser(object):
 
 
 
-    def saveMatches(self, matches, fileName='matches.json'):
+    def save_matches(self, matches, fileName='matches.json'):
         """
         Save objects to file
         :param matches:

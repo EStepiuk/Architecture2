@@ -1,0 +1,146 @@
+[
+    {
+        "res2": 0,
+        "res1": 2,
+        "country": "England",
+        "team1": "Lester",
+        "date": [
+            26,
+            2,
+            2016
+        ],
+        "team2": "Everton"
+    },
+    {
+        "res2": 0,
+        "res1": 3,
+        "country": "England",
+        "team1": "MU",
+        "date": [
+            27,
+            2,
+            2016
+        ],
+        "team2": "Everton"
+    },
+    {
+        "res2": 0,
+        "res1": 0,
+        "country": "England",
+        "team1": "Chelsea",
+        "date": [
+            28,
+            2,
+            2016
+        ],
+        "team2": "Everton"
+    },
+    {
+        "res2": 0,
+        "res1": 1,
+        "country": "England",
+        "team1": "Arsenal",
+        "date": [
+            29,
+            2,
+            2016
+        ],
+        "team2": "Everton"
+    },
+    {
+        "res2": 0,
+        "res1": 2,
+        "country": "Spain",
+        "team1": "Barcelona",
+        "date": [
+            26,
+            2,
+            2016
+        ],
+        "team2": "Everton"
+    },
+    {
+        "res2": 0,
+        "res1": 2,
+        "country": "Spain",
+        "team1": "Real",
+        "date": [
+            27,
+            2,
+            2016
+        ],
+        "team2": "Everton"
+    },
+    {
+        "res2": 0,
+        "res1": 2,
+        "country": "Spain",
+        "team1": "Sevilla",
+        "date": [
+            28,
+            2,
+            2016
+        ],
+        "team2": "Everton"
+    },
+    {
+        "res2": 1,
+        "res1": 2,
+        "country": "Spain",
+        "team1": "Eibar",
+        "date": [
+            29,
+            2,
+            2016
+        ],
+        "team2": "Everton"
+    },
+    {
+        "res2": 4,
+        "res1": 2,
+        "country": "Ukraine",
+        "team1": "Dynamo",
+        "date": [
+            26,
+            2,
+            2016
+        ],
+        "team2": "Everton"
+    },
+    {
+        "res2": 2,
+        "res1": 2,
+        "country": "Ukraine",
+        "team1": "Vorskla",
+        "date": [
+            27,
+            2,
+            2016
+        ],
+        "team2": "Everton"
+    },
+    {
+        "res2": 6,
+        "res1": 2,
+        "country": "Ukraine",
+        "team1": "Stal",
+        "date": [
+            28,
+            2,
+            2016
+        ],
+        "team2": "Everton"
+    },
+    {
+        "res2": 7,
+        "res1": 2,
+        "country": "Ukraine",
+        "team1": "Dnipro",
+        "date": [
+            29,
+            2,
+            2016
+        ],
+        "team2": "Everton"
+    }
+]

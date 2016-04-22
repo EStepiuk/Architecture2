@@ -14,13 +14,13 @@ class BaseController:
         self.factory = MatchFactory()
         self.service = MatchesService()
 
-    def _getSerialiseMethod(self):
+    def _get_serializer(self):
         """
         Choose serialisation method from config file
         :return:
         """
         parser = configparser.ConfigParser()
-        parser.read("config.ini")
+        parser.read("../config.ini")
         method = parser["serialize_method"]['method']
         if method == "pickle":
             return PickleSerialyser()

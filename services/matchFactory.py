@@ -1,7 +1,7 @@
 from models.model import Match
 
 
-class MatchFactory(object):
+class MatchFactory:
     """
     Class produce list of match from hardcoded list
     """

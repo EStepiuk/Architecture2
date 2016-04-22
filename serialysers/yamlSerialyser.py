@@ -8,7 +8,7 @@ except ImportError:
     from yaml import Loader, Dumper
 
 
-class YamlSerialyser(object):
+class YamlSerialyser:
     def load_matches(self, fileName='matches.yaml'):
         """
         Load objects from file
