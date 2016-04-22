@@ -13,7 +13,7 @@ class ConsoleView(object):
         :return:
         """
         for match in matches:
-            print(match)
+            print("%-10s : %-10s vs %-10s | %-2s:%-2s | %s" % (match[0], match[1], match[2], match[3], match[4], match[5]))
 
     def render_menu(self):
         """
