@@ -12,6 +12,7 @@ class ConsoleView(object):
         :param matches:
         :return:
         """
+
         for match in matches:
             print("%-10s : %-10s vs %-10s | %-2s:%-2s | %s-%s-%s" % (match[0], match[1], match[2], match[3], match[4], match[5][0], match[5][1], match[5][2]))
 
