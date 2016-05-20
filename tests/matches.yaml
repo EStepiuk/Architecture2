@@ -1,84 +1,72 @@
 - !!python/object:models.model.Match
-  country: England
-  date: [26, 2, 2016]
-  res1: 2
-  res2: 0
-  team1: Lester
-  team2: Everton
+  _date: [26, 2, 2016]
+  _res_one: 2
+  _res_two: 0
+  _team_one: Lester
+  _team_two: Everton
 - !!python/object:models.model.Match
-  country: England
-  date: [27, 2, 2016]
-  res1: 3
-  res2: 0
-  team1: MU
-  team2: Everton
+  _date: [27, 2, 2016]
+  _res_one: 3
+  _res_two: 0
+  _team_one: MU
+  _team_two: Everton
 - !!python/object:models.model.Match
-  country: England
-  date: [28, 2, 2016]
-  res1: 0
-  res2: 0
-  team1: Chelsea
-  team2: Everton
+  _date: [28, 2, 2016]
+  _res_one: 0
+  _res_two: 0
+  _team_one: Chelsea
+  _team_two: Everton
 - !!python/object:models.model.Match
-  country: England
-  date: [29, 2, 2016]
-  res1: 1
-  res2: 0
-  team1: Arsenal
-  team2: Everton
+  _date: [29, 2, 2016]
+  _res_one: 1
+  _res_two: 0
+  _team_one: Arsenal
+  _team_two: Everton
 - !!python/object:models.model.Match
-  country: Spain
-  date: [26, 2, 2016]
-  res1: 2
-  res2: 0
-  team1: Barcelona
-  team2: Everton
+  _date: [26, 2, 2016]
+  _res_one: 2
+  _res_two: 0
+  _team_one: Barcelona
+  _team_two: Everton
 - !!python/object:models.model.Match
-  country: Spain
-  date: [27, 2, 2016]
-  res1: 2
-  res2: 0
-  team1: Real
-  team2: Everton
+  _date: [27, 2, 2016]
+  _res_one: 2
+  _res_two: 0
+  _team_one: Real
+  _team_two: Everton
 - !!python/object:models.model.Match
-  country: Spain
-  date: [28, 2, 2016]
-  res1: 2
-  res2: 0
-  team1: Sevilla
-  team2: Everton
+  _date: [28, 2, 2016]
+  _res_one: 2
+  _res_two: 0
+  _team_one: Sevilla
+  _team_two: Everton
 - !!python/object:models.model.Match
-  country: Spain
-  date: [29, 2, 2016]
-  res1: 2
-  res2: 1
-  team1: Eibar
-  team2: Everton
+  _date: [29, 2, 2016]
+  _res_one: 2
+  _res_two: 1
+  _team_one: Eibar
+  _team_two: Everton
 - !!python/object:models.model.Match
-  country: Ukraine
-  date: [26, 2, 2016]
-  res1: 2
-  res2: 4
-  team1: Dynamo
-  team2: Everton
+  _date: [26, 2, 2016]
+  _res_one: 2
+  _res_two: 4
+  _team_one: Dynamo
+  _team_two: Everton
 - !!python/object:models.model.Match
-  country: Ukraine
-  date: [27, 2, 2016]
-  res1: 2
-  res2: 2
-  team1: Vorskla
-  team2: Everton
+  _date: [27, 2, 2016]
+  _res_one: 2
+  _res_two: 2
+  _team_one: Vorskla
+  _team_two: Everton
 - !!python/object:models.model.Match
-  country: Ukraine
-  date: [28, 2, 2016]
-  res1: 2
-  res2: 6
-  team1: Stal
-  team2: Everton
+  _date: [28, 2, 2016]
+  _res_one: 2
+  _res_two: 6
+  _team_one: Stal
+  _team_two: Everton
 - !!python/object:models.model.Match
-  country: Ukraine
-  date: [29, 2, 2016]
-  res1: 2
-  res2: 7
-  team1: Dnipro
-  team2: Everton
+  _date: [29, 2, 2016]
+  _res_one: 2
+  _res_two: 7
+  _team_one: Dnipro
+  _team_two: Everton

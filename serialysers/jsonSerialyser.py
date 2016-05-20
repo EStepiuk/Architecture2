@@ -10,13 +10,13 @@ class MatchEncoder(json.JSONEncoder):
 
     def default(self, o):
         if isinstance(o, Match):
-            return {"country": o.country,
-                    "team1": o.team1,
-                    "team2": o.team2,
-                    "res1": o.res1,
-                    "res2": o.res2,
-                    "date": o.date
-                    }
+            return {
+                "team1": o._team_one,
+                "team2": o._team_two,
+                "res1": o._res_one,
+                "res2": o._res_two,
+                "date": o._date
+            }
         return json.JSONEncoder
 
 
@@ -32,8 +32,7 @@ class JsonSerialyser:
             list_of_matches = json.load(f)
             matches = []
             for m in list_of_matches:
-                matches.append(Match(m["country"], m["team1"], m["team2"],
-                                     m["res1"], m["res2"], m["date"]))
+                matches.append(m)
             return matches
 
     @staticmethod

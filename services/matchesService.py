@@ -5,21 +5,6 @@ class MatchesService:
     """
     Class implements actions with matches
     """
-
-    @staticmethod
-    def get_country(matches, countryName):
-        """
-        Find all matches in selected country
-        :param matches:
-        :param countryName:
-        :return:
-        """
-        res = []
-        for m in matches:
-            if m.country == countryName:
-                res.append(m)
-        return res
-
     @staticmethod
     def get_team(matches, teamName):
         """
@@ -30,15 +15,15 @@ class MatchesService:
         """
         res = []
         for m in matches:
-            if m.team1 == teamName or m.team2 == teamName:
+            if m._team_one == teamName or m._team_two == teamName:
                 res.append(m)
         return res
 
     @staticmethod
-    def add_match(matches, country, team1, team2, res1, res2, day, month, year):
+    def add_match(matches, team1, team2, res1, res2, day, month, year):
         """
         Function add match to list of matches
         :param matches:
         :return:
         """
-        matches.append(Match(country, team1, team2, res1, res2, [day, month, year]))
+        matches.append(Match(team1, team2, res1, res2, [day, month, year]))

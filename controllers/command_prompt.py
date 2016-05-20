@@ -19,9 +19,7 @@ class CommandPromptController(BaseController):
                 or opts[0][0] in ('-h', '--help'):
             self.view.render_console_help()
         elif opts[0][0] in ('-a', '--add'):
-            self.service.add_match(matches, args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7])
+            self.service.add_match(matches, args[1], args[2], args[3], args[4], args[5], args[6], args[7])
             self.view.render_matches(matches)
         elif opts[0][0] in ('-t', '--team'):
             self.view.render_matches(self.service.get_team(matches, opts[0][1]))
-        elif opts[0][0] in ('-c', '--country'):
-            self.view.render_matches(self.service.get_country(matches, opts[0][1]))

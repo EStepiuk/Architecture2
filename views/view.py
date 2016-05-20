@@ -5,7 +5,7 @@ class ConsoleView(object):
     """
     Class shows info on console
     """
-
+    @staticmethod
     def render_matches(self, matches):
         """
         Show list of match
@@ -15,31 +15,27 @@ class ConsoleView(object):
 
         for match in matches:
             print(match)
-
+    @staticmethod
     def render_menu(self):
         """
         Show menu cases
         """
         print("""
-        1. England
-        2. Spain
-        3. Ukraine
-        4. Select team
-        5. Add match
-        6. Load matches from file
-        7. Show all matches
-        8. Exit
+        1. Select team
+        2. Add match
+        3. Load matches from file
+        4. Show all matches
+        5. Exit
         """)
-
+    @staticmethod
     def msg_output(self, mes):
         print(mes)
-
+    @staticmethod
     def render_console_help(self):
         print("""
         footballtable [option] [args]
         options:
-        -a, --add <country> <team1> <team2> <team1 goals> <team2 goals> <date> <month> <year>
-        -c, --country= <country>
+        -a, --add <team1> <team2> <team1 goals> <team2 goals> <date> <month> <year>
         -t, --team= <team>
         -h, --help
         """)

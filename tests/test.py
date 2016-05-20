@@ -7,6 +7,7 @@ from serialysers.yamlSerialyser import YamlSerialyser
 from services.controllerFactory import ControllerFactory
 from services.matchFactory import MatchFactory
 from services.matchesService import MatchesService
+from models.model import Match
 from tests.string_support import *
 from serialysers.pickleSerialyser import PickleSerialyser
 
@@ -42,21 +43,18 @@ class TestStringMethods(unittest.TestCase):
 
     def test_teamPrint(self):
         matches = MatchFactory().get_all()
-        self.assertTrue(matches[0].equal(matches[0]))
-        self.assertFalse(matches[0].equal(2))
+        self.assertTrue(matches[0] == matches[0])
+        self.assertFalse(matches[0] == matches[1])
 
     def test_get_team(self):
         matches = MatchFactory().get_all()
         self.assertIsNotNone(MatchesService().get_team(matches, "MU"))
 
-    def test_get_country(self):
-        matches = MatchFactory().get_all()
-        self.assertIsNotNone(MatchesService().get_country(matches, "England"))
 
     def test_add_match(self):
         matches = MatchFactory().get_all()
         self.assertIsNone(MatchesService()
-                          .add_match(matches, 'England', 'Lester', 'Everton', 2, 0, 26, 2, 2016))
+                          .add_match(matches, 'Lester', 'Everton', 2, 0, 26, 2, 2016))
 
     def test_json_load_matches(self):
         matches = JsonSerialyser.load_matches()
@@ -76,6 +74,10 @@ class TestStringMethods(unittest.TestCase):
 
     def test_json_defaul(self):
         self.assertIsNotNone(MatchEncoder().default(""))
+
+    def test_model_str(self):
+        m = Match('Lester', 'Everton', 2, 0, [26, 2, 2016])
+        self.assertIsNotNone(m.__str__())
 
     def test_get_matches_get_country(self):
         self.assertIsNotNone(ControllerFactory.get_controller("configtest1.ini"))
