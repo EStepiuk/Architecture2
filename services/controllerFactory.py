@@ -11,7 +11,7 @@ class ControllerFactory:
     """
 
     @staticmethod
-    def get_controller(filename="../config.ini"):
+    def get_controller(filename="config.ini"):
         parser = configparser.ConfigParser()
         parser.read(filename)
         method = parser["controller"]['method']
